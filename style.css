@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 236, 208);
+}
+
+.bar {
+  fill: cornflowerblue;
+}
+
+.bar:hover {
+  fill: white;
+}
+
+#tooltip {
+  position: absolute;
+  opacity: 0;
+  background-color: black;
+  color: whitesmoke;
+  pointer-events: none;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 5px;
+  transition: opacity 250ms ease-in;
+}
+
+#title {
+  font-size: 1.5em;
+  fill: rgb(80, 72, 60);
+}
+
+#yAxisLabel {
+  font-size: 1.2em;
+  fill: rgb(80, 72, 60);
+}
+
+#xAxisLabel {
+  fill: rgb(80, 72, 60);
+}
